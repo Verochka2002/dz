@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 10px;
+}
+.header{
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellowgreen;
+    color: white;
+}
+.header-text{
+    margin-left: 300px;
+}
+.far{
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.basket-card{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    right:0;
+    top: -5px;
+    box-shadow: 6px 4px 35px 0px #00000036;
+    position: fixed;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 300px;
+}
+.body{
+    display: flex;
+    overflow: hidden;
+   justify-content: space-around;
+}
+.goods-item{
+    height: 260px;
+    width: 170px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-items: center;
+}
+.goods-item > div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.addBtn{
+    width: 120px;
+     height: 30px;
+     border-radius: 15px;
+     color: whitesmoke;
+     background: yellowgreen;
+     font-size: 14px;
+     font-family: "Montserrat", sans-serif;
+     border: none;
+     box-shadow: 2px 2px grey;
+     margin-left: 27px;
+}
+.sortBtn{
+    width: 105px;
+     height: 17px;
+     border-radius: 15px;
+     color: yellowgreen;
+     background: whitesmoke;
+     font-size: 14px;
+     font-family: "Montserrat", sans-serif;
+     border: none;
+     box-shadow: 2px 2px grey;
+     margin-left: 10px;
+}
+.sortBtn:hover{
+    background: darkred;
+    color: whitesmoke;
+    box-shadow: none;
+}
+.addBtn:hover{
+    background: darkred;
+    box-shadow: none;
+}
+.fa-times{
+    transition: 0.5s
+}
+.fa-times:hover{
+    color: darkred;
+    transform: rotate(360deg);
+}
+.far:hover{
+    color: darkred;
+}
+.fa-search:hover{
+    color: darkred;
+}
+.fa-shopping-cart:hover{
+    color: darkred;
+}
